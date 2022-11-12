@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Work+Sans&display=swap');
+
+.pageBackground{
+  background-color: aliceblue;
+  min-height: 100vh;
+}
+
+.mont{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.ital{
+  font-style: italic;
+}
+
+.wsans{
+  font-family: 'Work Sans', sans-serif;
+}
+
+#introCard{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

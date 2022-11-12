@@ -1,0 +1,42 @@
+.navSpace{
+  background-color: gainsboro;
+  justify-content: center;
+}
+
+.poemContainer{
+  overflow-y: scroll;
+  /* border-bottom: solid #999;
+  border-left: solid #999;
+  border-right: solid #999; */
+  padding: 10px;
+  justify-content: center;
+  /*background-color: beige;*/
+}
+
+.mainTitle{
+  /*border-left: solid #999;
+  border-right: solid #999;*/
+}
+
+.toast-container{
+  justify-content: center;
+}
+
+
+.btnPanel{
+  justify-content: center;
+  padding: 10px;
+}
+
+#continueButton{
+  border-radius: 50%;
+  background-color: #3b434a;
+}
+
+#continueButton:hover{
+  background-color: #0b0c0d;
+}
+
+#continueButton:active{
+  background-color: #555e66;
+}
