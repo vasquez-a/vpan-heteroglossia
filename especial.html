@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>A Box</title>
+		<title>Especial</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <link href="main.css" rel="stylesheet">
@@ -17,20 +17,23 @@
   
     </style>
   <body>
-    <div class="indexPage pageBackground">
-      <div class="card col-6 offset-sm-3" id="introCard">
-        <div class="card-body">
-          <p class="wsans">this is gonna be some text explaining this poem :D yeeeee</p>
-          <button class="wsans btn btn-dark" onclick="openWindow()">hellohello</button>
-        </div>
-      </div>
+    
+    
+    
+    
+    <div id="especialContainer" onclick="switchImg()">
+      <img id="espImg1" src="/vpan-heteroglossia/especial/especial-01.svg">
+      <img id="espImg2" class="hidden" src="/vpan-heteroglossia/especial/especial-02.svg">
     </div>
     
     
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-      function openWindow(){
-        window.location.replace("/vpan-heteroglossia/main.html");
+      function switchImg(){
+        console.log("hi");
+        $("#espImg1").hide();
+        $("#espImg2").show();
+        //window.location.replace("/vpan-heteroglossia/main.html");
         //window.open("/main.html","_blank", "width=150,height=100");
       }
     </script>
