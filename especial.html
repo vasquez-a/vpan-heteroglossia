@@ -29,6 +29,13 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
+      
+      $("#espImg1").hover(function(){
+        $(this).attr("src", "/vpan-heteroglossia/especial/especial-03.svg");
+      },function(){
+        $(this).attr("src", "/vpan-heteroglossia/especial/especial-01.svg");
+      });
+      
       function switchImg(){
         console.log("hi");
         $("#espImg1").hide();
