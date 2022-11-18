@@ -24,7 +24,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
       
-      $.getJSON("/razones3/razones3alert.json", function(result){
+      $.getJSON("/vpan-heteroglossia/razones3/razones3alert.json", function(result){
         result.alerts.forEach(function(index){
           $("#razones3Container").append("<div class='alert alert-primary alert-dismissible' role='alert'><div>" + index + "</div><button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button></div>");
         })
