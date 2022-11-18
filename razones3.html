@@ -16,28 +16,22 @@
     
     
     
-    <div id="especialContainer" onclick="switchImg()">
-      <img id="espImg1" src="/vpan-heteroglossia/especial/especial-01.svg">
-      <img id="espImg2" class="hidden" src="/vpan-heteroglossia/especial/especial-02.svg">
+    <div id="razones3Container">
+
     </div>
     
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
       
-      $("#espImg1").hover(function(){
-        $(this).attr("src", "/vpan-heteroglossia/especial/especial-03.svg");
-      },function(){
-        $(this).attr("src", "/vpan-heteroglossia/especial/especial-01.svg");
+      $.getJSON("/razones3/razones3alert.json", function(result){
+        result.alerts.forEach(function(index){
+          $("#razones3Container").append("<div class='alert alert-primary alert-dismissible' role='alert'><div>" + index + "</div><button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button></div>");
+        })
+        //console.log(fulltext + "\n" + max);
       });
       
-      function switchImg(){
-        console.log("hi");
-        $("#espImg1").hide();
-        $("#espImg2").show();
-        //window.location.replace("/vpan-heteroglossia/main.html");
-        //window.open("/main.html","_blank", "width=150,height=100");
-      }
+      
     </script>
   </body>
 </html>
