@@ -53,6 +53,11 @@
 
 }
 
+.voiceLineName{
+  font-size: 14pt;
+  font-weight: 400;
+}
+
 .voicemailCard{
   border-top: solid #999 1px;
   border-bottom: solid #999 1px;
