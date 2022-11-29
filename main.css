@@ -44,6 +44,16 @@
   padding: 10px;
 }
 
+#playBtn{
+  padding: 0;
+  color: deepskyblue;
+}
+
 #azucarCard{
 
+}
+
+.voicemailCard{
+  border-top: solid #999 1px;
+  border-bottom: solid #999 1px;
 }
