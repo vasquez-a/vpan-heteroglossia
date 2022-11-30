@@ -4,6 +4,7 @@
 .pageBackground{
   background-color: aliceblue;
   min-height: 100vh;
+  background-image: url(/vpan-heteroglossia/mainbg-01.svg);
 }
 
 .mont{
