@@ -22,5 +22,29 @@
     "I could tell you",
     "all the little reasons why,",
     "but I am learning my home dialect of Spanish"
+  ],
+  "colors": [
+    "#fff3cd",
+    "#f8f4cd",
+    "#f1f5ce",
+    "#ebf5d0",
+    "#e4f6d2",
+    "#ddf6d5",
+    "#d7f6d9",
+    "#d1f6dc",
+    "#ccf6e0",
+    "#c7f5e4",
+    "#c3f4e8",
+    "#c0f4ec",
+    "#bef3f0",
+    "#bcf1f4",
+    "#bcf0f7",
+    "#bceefa",
+    "#beedfc",
+    "#c0ebfe",
+    "#c3e9ff",
+    "#c7e6ff",
+    "#cbe4ff",
+    "#cfe2ff"
   ]
 }
