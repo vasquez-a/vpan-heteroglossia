@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 .pageBackground{
@@ -7,8 +7,8 @@
   background-image: url(/vpan-heteroglossia/mainbg-01.svg);
 }
 
-.mont{
-  font-family: 'Montserrat', sans-serif;
+.mont{ /*this was originally gonna be montserrat lol*/
+  font-family: 'IBM Plex Serif', serif;
 }
 
 .ital{

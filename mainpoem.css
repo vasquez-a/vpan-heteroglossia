@@ -13,6 +13,11 @@
   /*background-color: beige;*/
 }
 
+.poemToast{
+  min-width: 100%;
+  max-width: inherit;
+}
+
 .mainTitle{
   /*border-left: solid #999;
   border-right: solid #999;*/
@@ -39,4 +44,8 @@
 
 #continueButton:active{
   background-color: #555e66;
+}
+
+#mainToastContainer{
+  width: 100%;
 }
