@@ -40,16 +40,18 @@
 
 #razonOneCaro{
   width: 368px;
-  height: 736px;
 }
 
 #especialContainer{
   width: 368px;
-  height: 736px;
 }
 
 .hidden{
   display: none;
+}
+
+.voicemailCardLine{
+  display: flex;
 }
 
 #azucarContainer{
