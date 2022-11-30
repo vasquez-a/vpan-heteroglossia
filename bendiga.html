@@ -18,29 +18,32 @@
     
     
     <div id="bendigaContainer">
-      <h1>Voicemail</h1>
-      <div>
-        <h2>Name</h2>
-        <h3>location</h3>
-        <h3>date</h3>
-        <button class="btn" id="playBtn"><i class="bi bi-play-circle"></i></button>
-        <div>text</div>
+      <h1 id="voicemailBoxTitle">Voicemail</h1>
+      <div class="voicemailCard" id="mainVoicemailCard">
+        <h2 id="voicemailName" class="mainVoiceItem">Mami</h2>
+        <h3 class="text-muted mainVoiceItem mainVoiceItemMute">home</h3>
+        <h3 class="text-muted mainVoiceItem mainVoiceItemMute">October 23, 2022 at 9:02 PM</h3>
+        <div>
+          <h3 class="mainVoiceItem" id="voiceTranscriptionHeader">Transcription</h3>
+          <button class="btn" id="playBtn"><i class="bi bi-play-circle"></i></button>
+        </div>
+        <p id="transcriptionText">text</p>
+      </div>
+      <div class="row voicemailCard">
+        <h2 class="col-6 voiceLineName">Count</h2>
+        <div class="col-6 voiceLineDate">date</div>
+      </div>
+      <div class="row voicemailCard">
+        <h2 class="col-6 voiceLineName">Your</h2>
+        <div class="col-6 voiceLineDate">date</div>
+      </div>
+      <div class="row voicemailCard">
+        <h2 class="col-6 voiceLineName">Blessings</h2>
+        <div class="col-6 voiceLineDate">date</div>
       </div>
       <div class="row voicemailCard">
         <h2 class="col-6 voiceLineName">Name</h2>
-        <div class="col-6">date</div>
-      </div>
-      <div class="row">
-        <h2 class="col-6">Name</h2>
-        <div class="col-6">date</div>
-      </div>
-      <div class="row">
-        <h2 class="col-6">Name</h2>
-        <div class="col-6">date</div>
-      </div>
-      <div class="row">
-        <h2 class="col-6">Name</h2>
-        <div class="col-6">date</div>
+        <div class="col-6 voiceLineDate">date</div>
       </div>
   
     </div>

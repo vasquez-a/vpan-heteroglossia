@@ -53,12 +53,68 @@
 
 }
 
+.mainVoiceItem{
+  margin: 0;
+  font-weight: 400;
+}
+
+#mainVoicemailCard{
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #fff;
+}
+
+.mainVoiceItemMute{
+  font-size: 10px;
+  font-weight: 300;
+}
+
+#voiceTranscriptionHeader{
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
 .voiceLineName{
+  padding-top: 2px;
+  padding-left: 20px;
   font-size: 14pt;
   font-weight: 400;
+  margin: 0;
+  vertical-align: middle;
+  height: inherit;
+}
+
+.voiceLineDate{
+  font-size: 14pt;
+  font-weight: 300;
+  text-align: right;
+  padding-right: 20px;
+}
+
+#voicemailName{
+  font-size: 20px;
+  color: black;
+  padding-top: 2px;
 }
 
 .voicemailCard{
   border-top: solid #999 1px;
   border-bottom: solid #999 1px;
+  color: #666;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#transcriptionText{
+  font-size: 14px;
+}
+
+#bendigaContainer{
+  background-color: #ddd;
+}
+
+#voicemailBoxTitle{
+  padding-top: 20px;
+  padding-left: 10px;
 }
