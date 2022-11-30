@@ -63,8 +63,17 @@
   color: deepskyblue;
 }
 
-#azucarCard{
+#azucarCard .card-body{
+  padding: 0;
+}
 
+#azucarCard .card-body iframe{
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.cardBodyText{
+  padding: 10px;
 }
 
 .mainVoiceItem{
@@ -144,4 +153,15 @@
 
 #razones3Container{
   padding: 10px;
+}
+
+#posterOverlay{
+  background-color: rgba(128,128,128,0.5);
+  color: white;
+  height: 573px;
+  width: 70%;
+}
+
+#azucarPoster{
+  width: 70%;
 }
