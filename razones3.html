@@ -27,8 +27,8 @@
       $.getJSON("/vpan-heteroglossia/razones3/razones3alert.json", function(result){
         result.alerts.forEach(function(index){
           $("#razones3Container").append("<div class='alert alert-primary alert-dismissible' role='alert'><div>" + index + "</div><button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button></div>");
-           $("#razones3Container").append("<div class='alert alert-primary alert-dismissible' role='alert'><div>and it doesn't matter exactly why</div></div><div class='alert alert-primary alert-dismissible' role='alert'><div>so long as I keep at it.</div></div>")
-        })
+        });
+        $("#razones3Container").append("<div class='alert alert-primary alert-dismissible' role='alert'><div>and it doesn't matter exactly why</div></div><div class='alert alert-primary alert-dismissible' role='alert'><div>so long as I keep at it.</div></div>")
         //console.log(fulltext + "\n" + max);
       });
       //    "and it doesn't matter exactly why",
