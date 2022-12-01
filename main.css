@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 .pageBackground{
-  background-color: aliceblue;
+  background-color: #c9daf8ff;
   min-height: 100vh;
   background-image: url(/vpan-heteroglossia/mainbg-01.svg);
 }
