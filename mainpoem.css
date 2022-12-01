@@ -1,6 +1,7 @@
 .navSpace{
-  background-color: gainsboro;
+  background-color: #3e4f6b;
   justify-content: center;
+  color: white
 }
 
 .poemContainer{

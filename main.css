@@ -7,6 +7,10 @@
   background-image: url(/vpan-heteroglossia/mainbg-01.svg);
 }
 
+.bgbg{
+  background-color: #c9daf8ff;
+}
+
 .mont{ /*this was originally gonna be montserrat lol*/
   font-family: 'IBM Plex Serif', serif;
 }
