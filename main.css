@@ -170,6 +170,7 @@
 
 #razones3Container{
   padding: 10px;
+  overflow: hidden;
 }
 
 #posterOverlay{
