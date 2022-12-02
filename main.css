@@ -148,8 +148,14 @@
   font-size: 14px;
 }
 
+.toastTitleText{
+  font-weight: 600;
+  font-size: 16px;
+}
+
 #bendigaContainer{
   background-color: #ddd;
+  height: 640px;
 }
 
 #voicemailBoxTitle{
