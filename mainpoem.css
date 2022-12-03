@@ -1,7 +1,9 @@
 .navSpace{
   background-color: #3e4f6b;
   justify-content: center;
-  color: white
+  color: white;
+  position: sticky;
+  top: 0;
 }
 
 .poemContainer{
@@ -28,10 +30,16 @@
   justify-content: center;
 }
 
+#poemContainer{
+  overflow-y: auto;
+  height: 80vh;
+}
 
 .btnPanel{
-  justify-content: center;
+  align-content: center;
   padding: 10px;
+  position: sticky;
+  bottom: 0;
 }
 
 #continueButton{
@@ -52,5 +60,9 @@
 }
 
 #mainPoemBody{
-  
+  /*overflow: hidden;*/
+}
+
+.toast:not(.showing):not(.show){
+  display: none;
 }
