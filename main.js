@@ -6,11 +6,16 @@ $(document).ready(function(){
   //document.getElementById('mainToastContainer').focus();
   const toastElList = document.querySelectorAll('.toast');
   const toastList = [...toastElList].map(toastEl => new bootstrap.Toast(toastEl));
+  max = toastElList.length;
   $("#continueButton").click(function(){
-    toastList[counter].show();
-    toastElList[counter].scrollIntoView();
-    //toastElList[counter].focus();
-    counter++;
+    if(counter != max){
+      toastList[counter].show();
+      toastElList[counter].scrollIntoView();
+      //toastElList[counter].focus();
+      counter++;
+    }else{
+      document.getElementById("continueButton").disabled = true;
+    }
   });
 });
 
