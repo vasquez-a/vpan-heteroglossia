@@ -20,16 +20,142 @@
     
     
     <div id="razones2Container">
-      <img src="/vpan-heteroglossia/razones2/razones_2.svg">
+      <!-- <img src="/vpan-heteroglossia/razones2/razones_2.svg"> -->
   
     </div>
     
     
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.23.0/cytoscape.min.js" integrity="sha512-gEWKnYYa1/1c3jOuT9PR7NxiVI1bwn02DeJGsl+lMVQ1fWMNvtjkjxIApTdbJ/wcDjQmbf+McWahXwipdC9bGA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script>
-      
-      
+      var cy = cytoscape({
+        container: $('#razones2Container'),
+        elements: [
+          {
+            data: {id: 'maternal grandmother', speak: 'sp', bg: '#005f9b'}
+          },
+          {
+            data: {id: 'paternal grandmother', speak: 'sp', bg: '#005f9b'}
+          },
+          {
+            data: {id: 'father', speak: 'bi', bg: '#24338a'}
+          },
+          {
+            data: {id: 'aunt', speak: 'bi', bg: '#24338a'}
+          },
+          {
+            data: {id: 'uncle', speak: 'bi', bg: '#24338a'}
+          },
+          {
+            data: {id: 'mother', speak: 'bi', bg: '#24338a'}
+          },
+          {
+            data: {id: 'sister', speak: 'bi', bg: '#24338a'}
+          },
+          {
+            data: {id: 'me', speak: 'en', bg: '#eae9f3'}
+          },
+          {
+            data: {id: 'm grandmother to f', source: 'maternal grandmother', target: 'father'}
+          },
+          {
+            data: {id: 'p grandmother to f', source: 'paternal grandmother', target: 'father'}
+          },
+          {
+            data: {id: 'a to f', source: 'aunt', target: 'father'}
+          },
+          {
+            data: {id: 'u to f', source: 'uncle', target: 'father'}
+          },
+          {
+            data: {id: 'm to f', source: 'mother', target: 'father'}
+          },
+          {
+            data: {id: 's to f', source: 'sister', target: 'father'}
+          },
+          {
+            data: {id: 'me to f', source: 'me', target: 'father'}
+          },
+          {
+            data: {id: 'm grandmother to m', source: 'maternal grandmother', target: 'mother'}
+          },
+          {
+            data: {id: 'p grandmother to m', source: 'paternal grandmother', target: 'mother'}
+          },
+          {
+            data: {id: 'a to m', source: 'aunt', target: 'mother'}
+          },
+          {
+            data: {id: 'u to m', source: 'uncle', target: 'mother'}
+          },
+          {
+            data: {id: 's to m', source: 'sister', target: 'mother'}
+          },
+          {
+            data: {id: 'me to m', source: 'me', target: 'mother'}
+          },
+          {
+            data: {id: 'm grandmother to a', source: 'maternal grandmother', target: 'aunt'}
+          },
+          {
+            data: {id: 'p grandmother to a', source: 'paternal grandmother', target: 'aunt'}
+          },
+          {
+            data: {id: 'u to a', source: 'uncle', target: 'aunt'}
+          },
+          {
+            data: {id: 's to a', source: 'sister', target: 'aunt'}
+          },
+          {
+            data: {id: 'me to a', source: 'me', target: 'aunt'}
+          },
+          {
+            data: {id: 'm grandmother to p grandmother', source: 'maternal grandmother', target: 'paternal grandmother'}
+          },
+          {
+            data: {id: 'm grandmother to u', source: 'maternal grandmother', target: 'uncle'}
+          },
+          {
+            data: {id: 'p grandmother to u', source: 'paternal grandmother', target: 'uncle'}
+          },
+          {
+            data: {id: 's to u', source: 'sister', target: 'uncle'}
+          },
+          {
+            data: {id: 'me to u', source: 'me', target: 'uncle'}
+          },
+          {
+            data: {id: 'm grandmother to s', source: 'maternal grandmother', target: 'sister'}
+          },
+          {
+            data: {id: 'p grandmother to s', source: 'paternal grandmother', target: 'sister'}
+          },
+          {
+            data: {id: 'me to s', source: 'me', target: 'sister'}
+          }
+        ],
+        style: [
+          {
+            selector: 'node',
+            style: {
+              'background-color': 'data(bg)',
+              'label': 'data(id)'
+            }
+          },
+          {
+            selector: 'edge',
+            style: {
+              'width': 3,
+              'line-color': '#ccc'
+            }
+          }
+        ],
+        layout: {
+          name: 'circle'
+        }
+      });
     </script>
   </body>
 </html>

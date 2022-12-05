@@ -168,6 +168,11 @@
   font-size: 18px;
 }
 
+#razones2Container{
+  height: 80vh;
+  padding: 10px;
+}
+
 #razones3Container{
   padding: 10px;
   overflow: hidden;
