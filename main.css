@@ -183,3 +183,9 @@
 #azucarPoster{
   width: 70%;
 }
+
+#compendioContainer{
+  padding-top: 10px;
+  background-color: rosybrown;
+  padding-bottom: 5px;
+}
