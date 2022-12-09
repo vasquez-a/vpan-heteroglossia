@@ -69,9 +69,12 @@
   padding: 10px;
 }
 
-#playBtn{
-  padding: 0;
-  color: deepskyblue;
+.playBtn{
+  color: #0c63e4;
+}
+
+.playBtn:hover, .playBtn:active {
+  color: #0346ab;
 }
 
 #azucarCard .card-body{
@@ -103,6 +106,10 @@
   font-weight: 300;
 }
 
+.mutedText{
+  opacity: 80%;
+}
+
 #voiceTranscriptionHeader{
   display: inline-block;
   font-size: 16px;
@@ -121,9 +128,17 @@
 
 .voiceLineDate{
   font-size: 14pt;
-  font-weight: 300;
-  text-align: right;
-  padding-right: 20px;
+  position: absolute;
+  right: 60px;
+}
+
+.voiceItem.grayvoice{
+  background-color: #ddd;
+}
+
+.voiceItem.grayvoice:not(.collapsed){
+  background-color: white;
+  color: #212529;
 }
 
 .razonCaroInner{
@@ -144,7 +159,7 @@
   padding-bottom: 10px;
 }
 
-#transcriptionText{
+.transcriptionText{
   font-size: 14px;
 }
 
@@ -156,6 +171,16 @@
 #bendigaContainer{
   background-color: #ddd;
   height: 640px;
+}
+
+.playRow{
+  display: flex;
+  align-items: center;
+}
+
+.playRow input{
+  max-width: 80%;
+  margin-left: 10px;
 }
 
 #voicemailBoxTitle{
@@ -193,4 +218,10 @@
   padding-top: 10px;
   background-color: rosybrown;
   padding-bottom: 5px;
+}
+
+.voicemailBtn{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
