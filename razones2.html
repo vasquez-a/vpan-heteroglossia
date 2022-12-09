@@ -8,7 +8,20 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <link href="main.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
-
+        <style>
+          .keyRow{
+            display: flex;
+            padding: 5px;
+          }
+          .blockyblock{
+            height: inherit;
+            width: 50px;
+            background-color: #ccc;
+            margin-right: 10px;
+            border-radius: 5px;
+          }
+      
+        </style>
 	</head>
   <body>
     
@@ -18,11 +31,14 @@
     </div>
 
     
-    
-    <div id="razones2Container">
-      <!-- <img src="/vpan-heteroglossia/razones2/razones_2.svg"> -->
-  
-    </div>
+    <section>
+      <div class="keyRow"><div class="blockyblock"></div><span class="wsans">Lines of communication</span></div>
+      <div id="razones2Container">
+
+        <!-- <img src="/vpan-heteroglossia/razones2/razones_2.svg"> -->
+
+      </div>
+    </section>
     
     
     
@@ -34,10 +50,10 @@
         container: $('#razones2Container'),
         elements: [
           {
-            data: {id: 'maternal grandmother', speak: 'sp', bg: '#005f9b'}
+            data: {id: 'maternal grandmother', speak: 'sp', bg: '#24338a'}
           },
           {
-            data: {id: 'paternal grandmother', speak: 'sp', bg: '#005f9b'}
+            data: {id: 'paternal grandmother', speak: 'sp', bg: '#24338a'}
           },
           {
             data: {id: 'father', speak: 'bi', bg: '#24338a'}
@@ -58,82 +74,88 @@
             data: {id: 'me', speak: 'en', bg: '#eae9f3'}
           },
           {
-            data: {id: 'm grandmother to f', source: 'maternal grandmother', target: 'father'}
+            data: {id: 'm grandmother to f', source: 'maternal grandmother', target: 'father', bg: '#ccc'}
           },
           {
-            data: {id: 'p grandmother to f', source: 'paternal grandmother', target: 'father'}
+            data: {id: 'p grandmother to f', source: 'paternal grandmother', target: 'father', bg: '#ccc'}
           },
           {
-            data: {id: 'a to f', source: 'aunt', target: 'father'}
+            data: {id: 'a to f', source: 'aunt', target: 'father', bg: '#ccc'}
           },
           {
-            data: {id: 'u to f', source: 'uncle', target: 'father'}
+            data: {id: 'u to f', source: 'uncle', target: 'father', bg: '#ccc'}
           },
           {
-            data: {id: 'm to f', source: 'mother', target: 'father'}
+            data: {id: 'm to f', source: 'mother', target: 'father', bg: '#ccc'}
           },
           {
-            data: {id: 's to f', source: 'sister', target: 'father'}
+            data: {id: 's to f', source: 'sister', target: 'father', bg: '#ccc'}
           },
           {
-            data: {id: 'me to f', source: 'me', target: 'father'}
+            data: {id: 'me to f', source: 'me', target: 'father', bg: '#ccc', bg: '#ccc'}
           },
           {
-            data: {id: 'm grandmother to m', source: 'maternal grandmother', target: 'mother'}
+            data: {id: 'm grandmother to m', source: 'maternal grandmother', target: 'mother', bg: '#ccc'}
           },
           {
-            data: {id: 'p grandmother to m', source: 'paternal grandmother', target: 'mother'}
+            data: {id: 'p grandmother to m', source: 'paternal grandmother', target: 'mother', bg: '#ccc'}
           },
           {
-            data: {id: 'a to m', source: 'aunt', target: 'mother'}
+            data: {id: 'a to m', source: 'aunt', target: 'mother', bg: '#ccc'}
           },
           {
-            data: {id: 'u to m', source: 'uncle', target: 'mother'}
+            data: {id: 'u to m', source: 'uncle', target: 'mother', bg: '#ccc'}
           },
           {
-            data: {id: 's to m', source: 'sister', target: 'mother'}
+            data: {id: 's to m', source: 'sister', target: 'mother', bg: '#ccc'}
           },
           {
-            data: {id: 'me to m', source: 'me', target: 'mother'}
+            data: {id: 'me to m', source: 'me', target: 'mother', bg: '#ccc'}
           },
           {
-            data: {id: 'm grandmother to a', source: 'maternal grandmother', target: 'aunt'}
+            data: {id: 'm grandmother to a', source: 'maternal grandmother', target: 'aunt',bg: '#ccc'}
           },
           {
-            data: {id: 'p grandmother to a', source: 'paternal grandmother', target: 'aunt'}
+            data: {id: 'p grandmother to a', source: 'paternal grandmother', target: 'aunt', bg: '#ccc'}
           },
           {
-            data: {id: 'u to a', source: 'uncle', target: 'aunt'}
+            data: {id: 'u to a', source: 'uncle', target: 'aunt', bg: '#ccc'}
           },
           {
-            data: {id: 's to a', source: 'sister', target: 'aunt'}
+            data: {id: 's to a', source: 'sister', target: 'aunt', bg: '#ccc'}
           },
           {
-            data: {id: 'me to a', source: 'me', target: 'aunt'}
+            data: {id: 'me to a', source: 'me', target: 'aunt', bg: '#ccc'}
           },
           {
-            data: {id: 'm grandmother to p grandmother', source: 'maternal grandmother', target: 'paternal grandmother'}
+            data: {id: 'm grandmother to p grandmother', source: 'maternal grandmother', target: 'paternal grandmother', bg: '#ccc'}
           },
           {
-            data: {id: 'm grandmother to u', source: 'maternal grandmother', target: 'uncle'}
+            data: {id: 'm grandmother to u', source: 'maternal grandmother', target: 'uncle', bg: '#ccc'}
           },
           {
-            data: {id: 'p grandmother to u', source: 'paternal grandmother', target: 'uncle'}
+            data: {id: 'p grandmother to u', source: 'paternal grandmother', target: 'uncle', bg: '#ccc'}
           },
           {
-            data: {id: 's to u', source: 'sister', target: 'uncle'}
+            data: {id: 's to u', source: 'sister', target: 'uncle', bg: '#ccc'}
           },
           {
-            data: {id: 'me to u', source: 'me', target: 'uncle'}
+            data: {id: 'me to u', source: 'me', target: 'uncle', bg: '#ccc'}
           },
           {
-            data: {id: 'm grandmother to s', source: 'maternal grandmother', target: 'sister'}
+            data: {id: 'm grandmother to s', source: 'maternal grandmother', target: 'sister', bg: '#ccc'}
           },
           {
-            data: {id: 'p grandmother to s', source: 'paternal grandmother', target: 'sister'}
+            data: {id: 'p grandmother to s', source: 'paternal grandmother', target: 'sister', bg: '#ccc'}
           },
           {
-            data: {id: 'me to s', source: 'me', target: 'sister'}
+            data: {id: 'me to s', source: 'me', target: 'sister', bg: '#ccc'}
+          },
+          {
+            data: {id: 'me to p grandmother', source: 'me', target: 'paternal grandmother', bg: '#f3f3f3'}
+          },
+          {
+            data: {id: 'me to m grandmother', source: 'me', target: 'maternal grandmother', bg: '#f3f3f3'}
           }
         ],
         style: [
@@ -141,14 +163,15 @@
             selector: 'node',
             style: {
               'background-color': 'data(bg)',
-              'label': 'data(id)'
+              'label': 'data(id)',
+              'font-family': 'work-sans, sans-serif'
             }
           },
           {
             selector: 'edge',
             style: {
               'width': 3,
-              'line-color': '#ccc'
+              'line-color': 'data(bg)'
             }
           }
         ],
