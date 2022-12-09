@@ -15,6 +15,7 @@ $(document).ready(function(){
       counter++;
     }else{
       document.getElementById("continueButton").disabled = true;
+      document.getElementById("homeBtn").style.visibility = "visible";
     }
   });
 });

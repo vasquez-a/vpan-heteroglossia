@@ -33,12 +33,18 @@
   justify-content: center;
 }
 
+#conBtnHolder{
+  margin-bottom: 5px;
+}
+
 .btnPanel{
   align-content: center;
   padding: 10px;
   position: sticky;
   bottom: 0;
   margin-top: 10px;
+  flex-direction: column;
+  background-color: #c9daf8ff;
 }
 
 #continueButton{

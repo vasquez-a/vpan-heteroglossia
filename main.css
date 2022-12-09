@@ -203,6 +203,10 @@
   overflow: hidden;
 }
 
+#homeBtn{
+  visibility: hidden;
+}
+
 #posterOverlay{
   background-color: rgba(128,128,128,0.5);
   color: white;
@@ -218,6 +222,7 @@
   padding-top: 10px;
   background-color: rosybrown;
   padding-bottom: 5px;
+  min-height: 100%;
 }
 
 .voicemailBtn{
