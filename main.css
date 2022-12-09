@@ -34,6 +34,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: solid 1px #aaa;
+  align-items: baseline;
 }
 
 .flashcardTitle{
@@ -171,6 +172,10 @@
 #bendigaContainer{
   background-color: #ddd;
   height: 640px;
+}
+
+.cardSubtitle{
+  font-style: italic;
 }
 
 .playRow{
